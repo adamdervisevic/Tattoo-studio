@@ -1,0 +1,164 @@
+.banner-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(background.jpeg);
+  background-size: cover;
+}
+.landing-section h1 {
+  font-size: 60px;
+  color: rgb(204, 204, 204);
+}
+.about {
+  background-color: black;
+  color: white;
+}
+.box {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.box::before {
+  border: 30px solid rgba(161, 147, 147, 0.979);
+  content: "";
+  display: block;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  position: absolute;
+  z-index: 1;
+  transition: 1s all;
+  opacity: 0.3;
+}
+
+.box:hover:before {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.box::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 35px;
+  left: 35px;
+  right: 35px;
+  bottom: 35px;
+  z-index: 1;
+  opacity: 1;
+  transition: 0.3s all;
+  border: 10px solid #fff;
+}
+
+.box:hover:after {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box:hover .box-image-over {
+  transform: scale(1);
+}
+
+.box-image-over {
+  position: relative;
+  transform: scale(1.1);
+  transition: 1s all;
+}
+
+.box-text {
+  position: absolute;
+  padding: 5px;
+  z-index: 99;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 45px;
+  transition: 0.3s all;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(253, 253, 253);
+}
+
+.box:hover .box-text {
+  bottom: 0;
+}
+@media screen and (min-width: 1900px) {
+  .col-sm-12 {
+    padding: 30px !important;
+  }
+}
+.copyright-text
+{
+  margin:0
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#919caa;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#131010;
+  color:#8fbbbbc5;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color: white;
+  background-color:#29aafe;
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+
+
+
